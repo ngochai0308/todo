@@ -137,3 +137,12 @@ function _displayItems(data) {
 
     todos = data;
 }
+window.addEventListener('load', function() {
+    // Khi trang web đã tải xong, ẩn hiệu ứng loading
+    var loadingOverlay = document.querySelector('.loading-overlay');
+    loadingOverlay.style.display = 'none';
+    
+    // Hiển thị nội dung trang web
+    var contain = document.querySelector('.contain');
+    contain.style.display = 'block';
+});
